@@ -1,4 +1,4 @@
-FROM balenalib/rpi-raspbian
+FROM debian
 MAINTAINER khld23
 # Originally made by: https://github.com/matteoredaelli/docker-mongodb-rpi
 
