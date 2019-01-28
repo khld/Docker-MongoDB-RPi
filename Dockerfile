@@ -1,11 +1,12 @@
-FROM debian:jessie
+FROM balenalib/rpi-raspbian
 MAINTAINER khld23
 # Originally made by: https://github.com/matteoredaelli/docker-mongodb-rpi
 
 # Install required packages
-RUN apt-get update && apt-get -y dist-upgrade && apt-get install -y  
-RUN apt-get update
+RUN apt-get update 
+RUN apt-get -y dist-upgrade
 RUN apt-get install -y mongodb-server
+RUN apt-get update
 # Volumessudo apt-get update
 VOLUME ["/docker-shares"]
 VOLUME ["/var/lib/mongodb"]
