@@ -3,7 +3,7 @@ MAINTAINER khld23
 # Originally made by: https://github.com/matteoredaelli/docker-mongodb-rpi
 
 # Install required packages
-RUN apt-get update && apt-get -y dist-upgrade && \apt-get install -y  mongodb-org # && \
+RUN apt-get update && apt-get -y dist-upgrade && apt-get install -y  mongodb-org # && \
     # rm -rf /var/lib/apt/lists/*
 
 # Volumes
