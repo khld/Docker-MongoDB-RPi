@@ -5,7 +5,7 @@ MAINTAINER khld23
 # Install required packages
 RUN apt-get update && apt-get -y dist-upgrade && apt-get install -y  
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv D68FA50FEA312927
-RUN echo "deb http://repo.mongodb.org/apt/debian jessie/mongodb-org/3.2 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+RUN echo "deb http://repo.mongodb.org/apt/debian jessie/mongodb-org/3.2 main" |  tee /etc/apt/sources.list.d/mongodb-org-3.2.list
 RUN apt-get update
 RUN apt-get install -y mongodb-org
 # Volumessudo apt-get update
